@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*line-height: 1.5em;*/
+}
+
+.form-row {
+  /*display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 300px;*/
+
+  max-width: 300px;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [label] 1fr [input] 50px;
+}
+
+.form-row label {
+  /*width: 200px;
+  flex: 3 1 auto;
+  display: block;
+  margin-right: 10px;*/
+  grid-column: label;
+  align-self: center;
+}
+
+.form-row input {
+  /*flex: 1 1 auto;*/
+  grid-column: input;
+  align-self: center;
+}
+
+span.prob_big {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3C82B7;
+}
+
+span.prob {
+  font-weight: bold;
+  color: #3C82B7;
+}
+
+span.smallnote {
+  font-size: 0.75em;
+  vertical-align: top;
+  position: relative;
+  top: -0.2em;
+}
+
+span.var {
+  font-weight: bold;
+  color: #836BAD;
+}
+
+span.varbox {
+  border: 1px solid silver;
+  border-radius: 3px;
+  padding: 0px 2px;
+}
